@@ -1,5 +1,14 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Usuario usuario = new Usuario("Lucas", 1234123, "Estudante");
+        Bilhete bilhete = new Bilhete(usuario);
+
+        bilhete.checarSaldo();
+        bilhete.adicionarSaldo(10.00);
+        bilhete.checarSaldo();
+        bilhete.passaCatraca();
+        bilhete.passaCatraca();
+        bilhete.checarSaldo();
+
     }
 }
